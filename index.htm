@@ -1,11 +1,102 @@
 <!DOCTYPE html>
-<html>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
 
-<h1>Deliciousness in every bite!</h1>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document.querySelector("#submit-btn").onclick = function () {
+          let name = document.querySelector(".input-name").value;
+          alert(
+            `Thank You ${name} for submitting your info to keep in touch with us.`
+          );
+        };
+      });
+    </script>
 
-<p>Every cookie made at the Kevin Cookie company is crafted with only the best ingredients. Butter from grass fed cows. Unbleached flour with the best flavor and textures. Organic sugar only from India. Eggs from chickens are free range. Even our water is special. It comes from the Cascade Mountain springs that we hike up to retrieve. Baking is our passion and we take it very seriously.</p>
+    <style>
+      body {
+        margin: 0;
+      }
 
+      .main-container {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
 
-</body>
+      .food-image {
+        text-align: center;
+        margin-bottom: 50px;
+      }
+
+      img {
+        width: 500px;
+      }
+
+      p {
+        line-height: 25px;
+      }
+
+      #submit-btn {
+        width: 100px;
+        margin-left: 50px;
+        border-radius: 5px;
+      }
+
+      form {
+        width: 200px;
+        height: 100px;
+        display: grid;
+        gap: 10px;
+        border-radius: 5px;
+      }
+
+      .contact-info {
+        margin-bottom: 50px;
+      }
+
+      footer {
+        width: 100%;
+        height: 100px;
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding-top: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="food-image">
+      <img src="Primary Logo.png" alt="" />
+    </div>
+    <div class="main-container">
+      <h1>Deliciousness in every bite!</h1>
+
+      <p>
+        Every cookie made at the Kevin Cookie company is crafted with only the
+        best ingredients. Butter from grass fed cows. Unbleached flour with the
+        best flavor and textures. Organic sugar only from India. Eggs from
+        chickens are free range. Even our water is special. It comes from the
+        Cascade Mountain springs that we hike up to retrieve. Baking is our
+        passion and we take it very seriously.
+      </p>
+      <p>
+        Provide your detail below if you want to keep in touch with our best
+        <br />
+        and incoming offers :
+      </p>
+
+      <div class="contact-info">
+        <form action="">
+          <input class="input-info input-name" type="text" placeholder="Name" />
+          <input class="input-info" type="password" placeholder="Password" />
+          <input id="submit-btn" type="submit" />
+        </form>
+      </div>
+    </div>
+    <footer>HELLO THIS IS OUR FOOTER GAYHEARTUCAL © 2023</footer>
+  </body>
 </html>
